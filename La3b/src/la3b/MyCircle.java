@@ -11,12 +11,12 @@ public class MyCircle extends MyShape{
 	MyCircle(double x, double y) {
 		this.x = x;
 		this.y = y;
-		c = new Circle(x,y,30);
-		c.setFill(Color.PURPLE);
 	}
 	
 	@Override
 	void draw(Pane p) {
+		c = new Circle(x,y,30);
+		c.setFill(Color.PURPLE);
 		p.getChildren().add(c);
 	}
 

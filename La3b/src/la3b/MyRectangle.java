@@ -11,8 +11,8 @@ public class MyRectangle extends MyShape{
 	MyRectangle(double x, double y) {
 		this.x = x;
 		this.y = y;
-		r = new Rectangle(x,y, 20, 30);
-		r.setFill(Color.PURPLE);
+		r = new Rectangle(x,y, 60, 30);
+		r.setFill(Color.RED);
 	}
 	
 	@Override

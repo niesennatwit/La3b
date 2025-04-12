@@ -12,7 +12,7 @@ public class MyTriangle extends MyShape{
 		this.x = x;
 		this.y = y;
 		t = new Polygon(x,y, x+30,y+40, x-30,y+40);
-		t.setFill(Color.PURPLE);
+		t.setFill(Color.GREEN);
 	}
 	
 	@Override
