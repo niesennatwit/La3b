@@ -11,18 +11,19 @@ public class MyRectangle extends MyShape{
 	MyRectangle(double x, double y) {
 		this.x = x;
 		this.y = y;
-		r = new Rectangle(x,y, 60, 30);
-		r.setFill(Color.RED);
 	}
 	
 	@Override
 	void draw(Pane p) {
+		r = new Rectangle(x,y, 60, 30);
+		r.setFill(Color.RED);
 		p.getChildren().add(r);
 	}
 
 	@Override
-	void highlight() {
+	void highlight(Pane p) {
 		r.setFill(Color.YELLOW);
+		p.getChildren().add(r);
 	}
 
 }

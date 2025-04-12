@@ -21,8 +21,9 @@ public class MyCircle extends MyShape{
 	}
 
 	@Override
-	void highlight() {
+	void highlight(Pane p) {
 		c.setFill(Color.YELLOW);
+		p.getChildren().add(c);
 	}
 
 }

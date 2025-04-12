@@ -7,5 +7,5 @@ public abstract class MyShape {
 	double y;
 	
 	abstract void draw(Pane p);
-	abstract void highlight();
+	abstract void highlight(Pane p);
 }

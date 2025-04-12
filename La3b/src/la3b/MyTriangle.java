@@ -11,18 +11,19 @@ public class MyTriangle extends MyShape{
 	MyTriangle(double x, double y) {
 		this.x = x;
 		this.y = y;
-		t = new Polygon(x,y, x+30,y+40, x-30,y+40);
-		t.setFill(Color.GREEN);
 	}
 	
 	@Override
 	void draw(Pane p) {
+		t = new Polygon(x,y, x+30,y+40, x-30,y+40);
+		t.setFill(Color.GREEN);
 		p.getChildren().add(t);
 	}
 
 	@Override
-	void highlight() {
+	void highlight(Pane p) {
 		t.setFill(Color.YELLOW);
+		p.getChildren().add(p);
 	}
 
 
